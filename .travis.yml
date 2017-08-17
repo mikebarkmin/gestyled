@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+    - 8.1
+script:
+    - npm run styleguide:build
+deploy:
+    provider: pages
+    local_dir: styleguide
+    ski_cleanup: true
+    github_token: $GITHUB_TOKEN
+    name: Mike Barkmin
+    on:
+        branch: master
