@@ -1,6 +1,6 @@
 {
   "name": "gestyled",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "React component library, build with styled-components",
   "main": "build/index.js",
   "repository": "https://github.com/mikebarkmin/gestyled",
@@ -33,7 +33,6 @@
     "styled-components": "^2.1.2",
     "styled-system": "^1.0.0-12",
     "polished": "^1.4.0"
-
   },
   "scripts": {
     "precommit": "lint-staged",
