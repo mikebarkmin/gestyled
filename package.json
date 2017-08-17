@@ -32,7 +32,7 @@
     "react": "^15.6.1",
     "styled-components": "^2.1.2",
     "styled-system": "^1.0.0-12",
-    "polished": "^1.4.0",
+    "polished": "^1.4.0"
 
   },
   "scripts": {
