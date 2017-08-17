@@ -20,17 +20,20 @@
     "jest": "^20.0.4",
     "jest-styled-components": "^4.4.0",
     "lint-staged": "^4.0.3",
-    "polished": "^1.4.0",
     "prettier": "^1.5.3",
     "prop-types": "^15.5.10",
-    "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-styleguidist": "^6.0.10",
     "react-test-renderer": "^15.6.1",
-    "styled-components": "^2.1.2",
-    "styled-system": "^1.0.0-12",
     "webpack": "^3.5.3",
     "webpack-blocks": "^1.0.0-beta.3"
+  },
+  "dependencies": {
+    "react": "^15.6.1",
+    "styled-components": "^2.1.2",
+    "styled-system": "^1.0.0-12",
+    "polished": "^1.4.0",
+
   },
   "scripts": {
     "precommit": "lint-staged",
