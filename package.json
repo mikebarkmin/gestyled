@@ -1,6 +1,6 @@
 {
   "name": "gestyled",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "React component library, build with styled-components",
   "main": "build/index.js",
   "repository": "https://github.com/mikebarkmin/gestyled",
@@ -21,7 +21,6 @@
     "jest-styled-components": "^4.4.0",
     "lint-staged": "^4.0.3",
     "prettier": "^1.5.3",
-    "prop-types": "^15.5.10",
     "react-dom": "^15.6.1",
     "react-styleguidist": "^6.0.10",
     "react-test-renderer": "^15.6.1",
@@ -32,6 +31,7 @@
     "react": "^15.6.1",
     "styled-components": "^2.1.2",
     "styled-system": "^1.0.0-12",
+    "prop-types": "^15.5.10",
     "polished": "^1.4.0"
   },
   "scripts": {
