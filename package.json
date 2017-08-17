@@ -1,6 +1,6 @@
 {
   "name": "gestyled",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "description": "React component library, build with styled-components",
   "main": "build/index.js",
   "repository": "https://github.com/mikebarkmin/gestyled",
@@ -14,8 +14,8 @@
     "babel-cli": "^6.24.1",
     "babel-core": "^6.25.0",
     "babel-jest": "^20.0.3",
-    "babel-preset-react-app": "^3.0.2",
-    "cross-env": "^5.0.5",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
     "husky": "^0.14.3",
     "jest": "^20.0.4",
     "jest-styled-components": "^4.4.0",
@@ -34,7 +34,7 @@
   },
   "scripts": {
     "precommit": "lint-staged",
-    "build": "cross-env NODE_ENV=production babel src -d build",
+    "build": "babel src -d build",
     "test": "jest --env=jsdom --watch",
     "coverage": "jest --env=jsdom --coverage",
     "prepublish": "npm run build",
@@ -42,10 +42,7 @@
     "styleguide:build": "styleguidist build"
   },
   "lint-staged": {
-    "*.js": [
-      "prettier --write",
-      "git add"
-    ]
+    "*.js": ["prettier --write", "git add"]
   },
   "dependencies": {}
 }
