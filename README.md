@@ -26,7 +26,7 @@ const App = props => (
 **See all components with possible props at [projects.barkmin.eu/gestyled](http://projects.barkmin.eu/gestyled)!**
 
 ## Base Props
-All components are wrapped in a higher order component that handles design-system-based repsonsive style props using [styled-system](https://github.com/jxnblk/styled-system).
+All components are wrapped in a higher order component that handles design-system-based responsive style props using [styled-system](https://github.com/jxnblk/styled-system).
 
 This idea is based on jxnblk's awesome functional React UI component library [rebass](https://github.com/jxnblk/rebass), which is also based on [styled-components](http://styled-components.com).
 
