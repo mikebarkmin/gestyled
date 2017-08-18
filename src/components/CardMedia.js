@@ -38,16 +38,18 @@ const CardMedia = props => {
       <Absolute left right top bottom>
         <Relative style={{ height: '100%' }}>
           <Absolute bottom right left>
-            <StyledCardMediaOverlay>
-              <StyledCardMediaTitleContainer>
-                <StyledCardMediaTitle>
-                  {props.title}
-                </StyledCardMediaTitle>
-                <StyledCardMediaSubtitle>
-                  {props.subtitle}
-                </StyledCardMediaSubtitle>
-              </StyledCardMediaTitleContainer>
-            </StyledCardMediaOverlay>
+            {props.title || props.subtitle
+              ? <StyledCardMediaOverlay>
+                  <StyledCardMediaTitleContainer>
+                    <StyledCardMediaTitle>
+                      {props.title}
+                    </StyledCardMediaTitle>
+                    <StyledCardMediaSubtitle>
+                      {props.subtitle}
+                    </StyledCardMediaSubtitle>
+                  </StyledCardMediaTitleContainer>
+                </StyledCardMediaOverlay>
+              : ''}
           </Absolute>
         </Relative>
       </Absolute>
