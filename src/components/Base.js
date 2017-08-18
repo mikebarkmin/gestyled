@@ -32,7 +32,10 @@ const propTypes = {
 const withStyle = Component => {
   const Base = styled(Component)([], space, width, fontSize, color, props => {
     const { theme } = props.theme;
-    return { transition: theme ? theme.transition : pastel.transition };
+    return {
+      transition: theme ? theme.transition : pastel.transition,
+      fontFamily: theme ? theme.fontFamily : pastel.fontFamily
+    };
   });
 
   Base.propTypes = propTypes;
