@@ -1,6 +1,6 @@
-import React from "react";
-import Button from "./Button";
-import { pastel } from "../theme";
+import React from 'react';
+import Button from './Button';
+import { pastel } from '../theme';
 
 /**
  * See Button for possible props.
@@ -8,7 +8,7 @@ import { pastel } from "../theme";
 const ButtonError = props => {
   const { theme } = props;
   const bg = theme ? theme.error : pastel.error;
-  const color = "white";
+  const color = 'white';
   return <Button bg={bg} color={color} {...props} />;
 };
 

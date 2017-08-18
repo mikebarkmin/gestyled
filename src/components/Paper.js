@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-import PropTypes from "prop-types";
-import { pastel } from "../theme";
-import withStyle from "./Base";
+import React from 'react';
+import styled from 'styled-components';
+import PropTypes from 'prop-types';
+import { pastel } from '../theme';
+import withStyle from './Base';
 
 const StyledPaper = styled.div`
   box-shadow: ${props => props.shadow};
@@ -16,12 +16,12 @@ const Paper = props => {
   if (theme && theme.shadowLevel && theme.shadowLevel.length > level) {
     shadow = theme.shadowLevel[level];
   }
-  let borderRadius = "2px";
+  let borderRadius = '2px';
   if (props.circle) {
-    borderRadius = "50%";
+    borderRadius = '50%';
   }
   if (props.squared) {
-    borderRadius = "none";
+    borderRadius = 'none';
   }
   return <StyledPaper shadow={shadow} borderRadius={borderRadius} {...props} />;
 };
@@ -34,7 +34,7 @@ Paper.propTypes = {
 };
 
 Paper.defaultProps = {
-  transition: "none",
+  transition: 'none',
   level: 0,
   circle: false,
   squared: false

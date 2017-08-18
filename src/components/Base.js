@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-import { space, width, fontSize, color } from "styled-system";
-import { oneOfType, number, string, arrayOf } from "prop-types";
-import { pastel } from "../theme";
+import React from 'react';
+import styled from 'styled-components';
+import { space, width, fontSize, color } from 'styled-system';
+import { oneOfType, number, string, arrayOf } from 'prop-types';
+import { pastel } from '../theme';
 
 const prop = oneOfType([number, string, arrayOf(oneOfType([number, string]))]);
 

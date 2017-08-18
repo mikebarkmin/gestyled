@@ -1,3 +1,3 @@
-import pastel from "./pastel";
+import pastel from './pastel';
 
 export { pastel };

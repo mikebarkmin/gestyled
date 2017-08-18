@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import PropTypes from "prop-types";
-import withStyle from "./Base";
+import React from 'react';
+import styled from 'styled-components';
+import PropTypes from 'prop-types';
+import withStyle from './Base';
 
 const StyledCardHeader = styled.div`
   padding: 16px;
@@ -45,7 +45,7 @@ const CardHeader = props =>
   <StyledCardHeader>
     {props.avatar
       ? <StyledCardHeaderAvatar size="40" src={props.avatar} />
-      : ""}
+      : ''}
     <StyledCardHeaderTitleContainer>
       <StyledCardHeaderTitle>
         {props.title}

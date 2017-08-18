@@ -1,6 +1,6 @@
-import React from "react";
-import Button from "./Button";
-import { pastel } from "../theme";
+import React from 'react';
+import Button from './Button';
+import { pastel } from '../theme';
 
 /**
  * See Button for possible props.

@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import PropTypes from "prop-types";
-import withStyle from "./Base";
+import React from 'react';
+import styled from 'styled-components';
+import PropTypes from 'prop-types';
+import withStyle from './Base';
 
 const StyledCardTitleContainer = styled.div`
   padding: 16px;

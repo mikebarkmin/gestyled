@@ -1,12 +1,12 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-import { space, width, fontSize, color } from "styled-system";
-import { darken, transparentize } from "polished";
-import withStyle from "./Base";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import { space, width, fontSize, color } from 'styled-system';
+import { darken, transparentize } from 'polished';
+import withStyle from './Base';
 
 const StyledButton = styled.button.attrs({
-  type: "button"
+  type: 'button'
 })`
   display: inline-block;
   cursor: pointer;
@@ -25,7 +25,7 @@ const StyledButton = styled.button.attrs({
   border: 1px solid transparent;
   text-align: center;
 
-  width: ${props => (props.full ? "100%" : "auto")};
+  width: ${props => (props.full ? '100%' : 'auto')};
 
   &:hover:enabled {
     background-color: ${props => darken(0.05, props.bg)};
@@ -56,8 +56,8 @@ Button.propTypes = {
 
 Button.defaultProps = {
   full: false,
-  bg: "lightgrey",
-  color: "black",
+  bg: 'lightgrey',
+  color: 'black',
   disabled: false
 };
 

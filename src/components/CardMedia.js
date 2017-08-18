@@ -1,9 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-import PropTypes from "prop-types";
-import Relative from "./Relative";
-import Absolute from "./Absolute";
-import withStyle from "./Base";
+import React from 'react';
+import styled from 'styled-components';
+import PropTypes from 'prop-types';
+import Relative from './Relative';
+import Absolute from './Absolute';
+import withStyle from './Base';
 
 const StyledCardMedia = styled.div`position: relative;`;
 
@@ -17,7 +17,7 @@ const CardMedia = props => {
     <StyledCardMedia {...props}>
       {props.children}
       <Absolute left right top bottom>
-        <Relative style={{ height: "100%" }}>
+        <Relative style={{ height: '100%' }}>
           <Absolute bottom right left>
             <StyledCardMediaOverlay>
               {props.overlay}

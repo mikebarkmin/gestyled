@@ -1,9 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-import { space, width, fontSize, color } from "styled-system";
-import { darken, transparentize } from "polished";
-import Button from "./Button";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import { space, width, fontSize, color } from 'styled-system';
+import { darken, transparentize } from 'polished';
+import Button from './Button';
 
 const StyledButtonDefault = styled(Button)`
   background-color: white;
@@ -33,8 +33,8 @@ ButtonDefault.propTypes = {
 
 ButtonDefault.defaultProps = {
   full: false,
-  bg: "lightgrey",
-  color: "black",
+  bg: 'lightgrey',
+  color: 'black',
   disabled: false
 };
 
