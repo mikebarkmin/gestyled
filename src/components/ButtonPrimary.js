@@ -1,15 +1,16 @@
 import React from 'react';
+import { withTheme } from 'styled-components';
 import Button from './Button';
-import { pastel } from '../theme';
+import { getColorFromKey } from '../theme';
 
 /**
  * See Button for possible props.
  */
 const ButtonPrimary = props => {
   const { theme } = props;
-  const bg = theme ? theme.primary : pastel.primary;
-  const color = theme ? theme.primaryText : pastel.primaryText;
+  const bg = getColorFromKey(theme, 'primary');
+  const color = getColorFromKey(theme, 'primaryText');
   return <Button bg={bg} color={color} {...props} />;
 };
 
-export default ButtonPrimary;
+export default withTheme(ButtonPrimary);

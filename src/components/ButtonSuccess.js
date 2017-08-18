@@ -1,15 +1,16 @@
 import React from 'react';
 import Button from './Button';
-import { pastel } from '../theme';
+import { withTheme } from 'styled-components';
+import { getColorFromKey } from '../theme';
 
 /**
  * See Button for possible props.
  */
 const ButtonSuccess = props => {
   const { theme } = props;
-  const bg = theme ? theme.success : pastel.success;
-  const color = 'white';
+  const bg = getColorFromKey(theme, 'success');
+  const color = getColorFromKey(theme, 'white');
   return <Button bg={bg} color={color} {...props} />;
 };
 
-export default ButtonSuccess;
+export default withTheme(ButtonSuccess);

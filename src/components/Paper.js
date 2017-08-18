@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { withTheme } from 'styled-components';
 import PropTypes from 'prop-types';
 import { pastel } from '../theme';
 import withStyle from './Base';
@@ -9,14 +9,13 @@ const StyledPaper = styled.div`
   border-radius: ${props => props.borderRadius};
   display: inline-block;
   box-sizing: border-box;
-  transition: ${({ theme }) => theme.transition || pastel.transition};
 `;
 
 const Paper = props => {
   const { level, theme } = props;
-  let shadow = pastel.shadowLevel[level];
-  if (theme && theme.shadowLevel && theme.shadowLevel.length > level) {
-    shadow = theme.shadowLevel[level];
+  let shadow = pastel.shadowLevels[level];
+  if (theme && theme.shadowLevels && theme.shadowLevels.length > level) {
+    shadow = theme.shadowLevels[level];
   }
   let borderRadius = '2px';
   if (props.circle) {
@@ -42,4 +41,4 @@ Paper.defaultProps = {
   squared: false
 };
 
-export default withStyle(Paper);
+export default withStyle(withTheme(Paper));
