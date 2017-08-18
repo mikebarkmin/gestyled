@@ -7,6 +7,8 @@ import withStyle from './Base';
 const StyledPaper = styled.div`
   box-shadow: ${props => props.shadow};
   border-radius: ${props => props.borderRadius};
+  display: inline-block;
+  box-sizing: border-box;
   transition: ${({ theme }) => theme.transition || pastel.transition};
 `;
 
