@@ -1,4 +1,5 @@
 import pastel from './pastel';
+import dark from './dark';
 
 const getColorFromKey = (theme, key) => {
   if (theme != undefined) {
@@ -12,4 +13,4 @@ const getColorFromKey = (theme, key) => {
   return key;
 };
 
-export { getColorFromKey, pastel };
+export { getColorFromKey, pastel, dark };
