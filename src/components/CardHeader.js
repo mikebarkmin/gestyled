@@ -3,13 +3,13 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import withStyle from './Base';
 
-const StyledCardHeader = styled.div`
+const StyledCardHeader = withStyle(styled.div`
   padding: 16px;
   font-weight: 500;
   box-sizing: border-box;
   position: relative;
   white-space: nowrap;
-`;
+`);
 
 const StyledCardHeaderAvatar = styled.img`
   border-radius: 50%;
@@ -57,8 +57,11 @@ const CardHeader = props =>
   </StyledCardHeader>;
 
 CardHeader.propTypes = {
+  /** Title */
   title: PropTypes.string,
+  /** Subtitle displayed under the title */
   subtitle: PropTypes.string,
+  /** URL to an image displayed on the left-hand-side of the title */
   avatar: PropTypes.string
 };
 
