@@ -56,7 +56,10 @@ const CardMedia = props => {
 };
 
 CardMedia.propTypes = {
-  overlay: PropTypes.element
+  /** Title displayed in an overlay */
+  title: PropTypes.string,
+  /** Subtitle displayed under the title in an overlay */
+  subtitle: PropTypes.string
 };
 
 export default withStyle(CardMedia);
