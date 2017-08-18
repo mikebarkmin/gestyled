@@ -44,6 +44,6 @@
     "styleguide:build": "styleguidist build"
   },
   "lint-staged": {
-    "*.js": ["prettier --write", "git add"]
+    "*.js": ["prettier --single-quote --write", "git add"]
   }
 }
