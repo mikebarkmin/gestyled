@@ -1,9 +1,8 @@
-See Card examples.
 ```javascript
 <CardHeader
     title="User"
     subtitle="Subtitle"
-    avatar="https://www.gravatar.com/avatar/00000000000000000000000000000000"/>
+    avatar="https://www.gravatar.com/avatar/0" />
 ```
 ```javascript
 <CardHeader
@@ -13,5 +12,5 @@ See Card examples.
 ```javascript
 <CardHeader
     title="User"
-    avatar="https://www.gravatar.com/avatar/00000000000000000000000000000000"/>
+    avatar="https://www.gravatar.com/avatar/0"/>
 ```

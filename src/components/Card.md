@@ -1,6 +1,9 @@
 ```javascript
 <Card>
-    <CardHeader title="User" subtitle="Subtitle" avatar="https://www.gravatar.com/avatar/00000000000000000000000000000000"/>
+    <CardHeader 
+        title="User"
+        subtitle="Subtitle"
+        avatar="https://www.gravatar.com/avatar/0" />
     <CardMedia title="Caption" subtitle="Subcaption">
         <img width="100%" src="https://unsplash.it/400/200/?random"/>
     </CardMedia>
@@ -18,7 +21,10 @@ Card uses the Paper component, so you can set other shadow levels
 
 ```javascript
 <Card level={4}>
-    <CardHeader title="User" subtitle="Subtitle" avatar="https://www.gravatar.com/avatar/00000000000000000000000000000000"/>
+    <CardHeader
+        title="User"
+        subtitle="Subtitle"
+        avatar="https://www.gravatar.com/avatar/0" />
     <CardMedia title="Caption" subtitle="Subcaption">
         <img width="100%" src="https://unsplash.it/400/200/?random"/>
     </CardMedia>
