@@ -12,7 +12,8 @@
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
     </CardText>
     <CardActions>
-        <Button>Erster</Button>
+        <Button>Action 1</Button>
+        <Button>Action 2</Button>
     </CardActions>
 </Card>
 ```
@@ -33,7 +34,8 @@ Card uses the Paper component, so you can set other shadow levels
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
     </CardText>
     <CardActions>
-        <Button>Erster</Button>
+        <Button>Action 1</Button>
+        <Button>Action 2</Button>
     </CardActions>
 </Card>
 ```
