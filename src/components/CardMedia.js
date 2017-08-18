@@ -9,7 +9,26 @@ const StyledCardMedia = styled.div`position: relative;`;
 
 const StyledCardMediaOverlay = styled.div`
   padding-top: 8px;
+  margin-bottom: 4px;
   background: rgba(0, 0, 0, 0.54);
+`;
+
+const StyledCardMediaTitleContainer = styled.div`
+  padding: 16px;
+  position: relative;
+`;
+
+const StyledCardMediaTitle = styled.span`
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.87);
+  display: block;
+  line-height: 36px;
+`;
+
+const StyledCardMediaSubtitle = styled.span`
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.54);
+  display: block;
 `;
 
 const CardMedia = props => {
@@ -20,7 +39,14 @@ const CardMedia = props => {
         <Relative style={{ height: '100%' }}>
           <Absolute bottom right left>
             <StyledCardMediaOverlay>
-              {props.overlay}
+              <StyledCardMediaTitleContainer>
+                <StyledCardMediaTitle>
+                  {props.title}
+                </StyledCardMediaTitle>
+                <StyledCardMediaSubtitle>
+                  {props.subtitle}
+                </StyledCardMediaSubtitle>
+              </StyledCardMediaTitleContainer>
             </StyledCardMediaOverlay>
           </Absolute>
         </Relative>
