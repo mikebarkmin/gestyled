@@ -2,7 +2,7 @@
 
 A React UI component library based on [styled-components](http://styled-components.com). 🕶️
 
-[![Build Status](https://travis-ci.org/mikebarkmin/gestyled.svg?branch=master)] [![Dependency Status](https://david-dm.org/mikebarkmin/gestyled.svg)] [![npm version](https://badge.fury.io/js/gestyled.svg)](https://badge.fury.io/js/gestyled)
+[![Build Status](https://travis-ci.org/mikebarkmin/gestyled.svg?branch=master)](https://travis-ci.org/mikebarkmin/gestyled) [![Dependency Status](https://david-dm.org/mikebarkmin/gestyled.svg)](https://david-dm.org/mikebarkmin/gestyled) [![npm version](https://badge.fury.io/js/gestyled.svg)](https://badge.fury.io/js/gestyled)
 
 ```sh
 npm install --save gestyled
