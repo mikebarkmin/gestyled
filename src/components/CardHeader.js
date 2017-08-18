@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import withStyle from "./Base";
 
 const StyledCardHeader = styled.div`
   padding: 16px;
@@ -61,4 +62,4 @@ CardHeader.propTypes = {
   avatar: PropTypes.string
 };
 
-export default CardHeader;
+export default withStyle(CardHeader);

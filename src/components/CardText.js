@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import withStyle from "./Base";
 
 const StyledCardText = styled.div`
   padding: 16px;
@@ -8,4 +9,4 @@ const StyledCardText = styled.div`
 
 const CardText = props => <StyledCardText {...props} />;
 
-export default CardText;
+export default withStyle(CardText);

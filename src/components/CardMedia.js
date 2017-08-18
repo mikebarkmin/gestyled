@@ -3,6 +3,7 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import Relative from "./Relative";
 import Absolute from "./Absolute";
+import withStyle from "./Base";
 
 const StyledCardMedia = styled.div`position: relative;`;
 
@@ -32,4 +33,4 @@ CardMedia.propTypes = {
   overlay: PropTypes.element
 };
 
-export default CardMedia;
+export default withStyle(CardMedia);

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import withStyle from "./Base";
 
 const StyledAbsolute = styled.div`
   position: absolute;
@@ -19,4 +20,4 @@ Absolute.propTypes = {
   bottom: PropTypes.bool
 };
 
-export default Absolute;
+export default withStyle(Absolute);

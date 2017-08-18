@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import { space, width, fontSize, color } from "styled-system";
 import { darken, transparentize } from "polished";
+import withStyle from "./Base";
 
 const StyledButton = styled.button.attrs({
   type: "button"
@@ -35,8 +36,6 @@ const StyledButton = styled.button.attrs({
     background-color: ${props => transparentize(0.5, props.bg)};
     color: ${props => transparentize(0.5, props.color)};
   }
-
-  ${space} ${width} ${fontSize} ${color};
 `;
 
 /**
@@ -62,4 +61,4 @@ Button.defaultProps = {
   disabled: false
 };
 
-export default Button;
+export default withStyle(Button);

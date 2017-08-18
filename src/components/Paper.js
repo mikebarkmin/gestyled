@@ -2,13 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { pastel } from "../theme";
-import { space, width, fontSize, color } from "styled-system";
+import withStyle from "./Base";
 
 const StyledPaper = styled.div`
   box-shadow: ${props => props.shadow};
   border-radius: ${props => props.borderRadius};
   transition: ${({ theme }) => theme.transition || pastel.transition};
-  ${space} ${width} ${fontSize} ${color};
 `;
 
 const Paper = props => {
@@ -41,4 +40,4 @@ Paper.defaultProps = {
   squared: false
 };
 
-export default Paper;
+export default withStyle(Paper);

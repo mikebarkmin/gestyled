@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import withStyle from "./Base";
 
 const StyledCardActions = styled.div`
   padding: 8px;
@@ -8,4 +9,4 @@ const StyledCardActions = styled.div`
 
 const CardActions = props => <StyledCardActions {...props} />;
 
-export default CardActions;
+export default withStyle(CardActions);
