@@ -14,10 +14,12 @@ yarn add gestyled
 
 ```javascript
 import React from 'react';
-import { Button } from 'gestyled';
+import { ThemeProvider, Button } from 'gestyled';
 
 const App = props => (
-    <Button>Press me!</Button>
+    <ThemeProvider>
+        <Button>Press me!</Button>
+    </ThemeProvider>
 );
 ```
 
