@@ -28,11 +28,12 @@
     "webpack-blocks": "^1.0.0-beta.3"
   },
   "dependencies": {
+    "lodash.merge": "^4.6.0",
+    "polished": "^1.4.0",
+    "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "styled-components": "^2.1.2",
-    "styled-system": "^1.0.0-12",
-    "prop-types": "^15.5.10",
-    "polished": "^1.4.0"
+    "styled-system": "^1.0.0-12"
   },
   "scripts": {
     "precommit": "lint-staged",
@@ -44,6 +45,9 @@
     "styleguide:build": "styleguidist build"
   },
   "lint-staged": {
-    "*.js": ["prettier --single-quote --write", "git add"]
+    "*.js": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
   }
 }

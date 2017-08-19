@@ -1,6 +1,5 @@
 ```javascript
 const dark = require('../theme/dark').default;
-console.log(dark);
 <ThemeProvider theme={dark}>
 <div>
     <ButtonPrimary mr={8}>Dark Theme Primary</ButtonPrimary>

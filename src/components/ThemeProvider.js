@@ -1,9 +1,8 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import { pastel } from '../theme';
+import { material } from '../theme';
+import merge from 'lodash.merge';
 
 export default props => {
-  const { theme } = props;
-  const mergedTheme = Object.assign(pastel, theme);
-  return <ThemeProvider {...props} theme={mergedTheme} />;
+  return <ThemeProvider {...props} theme={merge({}, material, props.theme)} />;
 };
