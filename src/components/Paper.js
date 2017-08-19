@@ -1,7 +1,6 @@
 import React from 'react';
 import styled, { withTheme } from 'styled-components';
 import PropTypes from 'prop-types';
-import { pastel } from '../theme';
 import withStyle from './Base';
 
 const StyledPaper = styled.div`
@@ -13,10 +12,7 @@ const StyledPaper = styled.div`
 
 const Paper = props => {
   const { level, theme } = props;
-  let shadow = pastel.shadowLevels[level];
-  if (theme && theme.shadowLevels && theme.shadowLevels.length > level) {
-    shadow = theme.shadowLevels[level];
-  }
+  let shadow = theme.shadowLevels[level];
   let borderRadius = '2px';
   if (props.circle) {
     borderRadius = '50%';
