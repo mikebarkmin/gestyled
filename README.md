@@ -33,7 +33,7 @@ All components are wrapped in a higher order component that handles design-syste
 This idea is based on jxnblk's awesome functional React UI component library [rebass](https://github.com/jxnblk/rebass), which is also based on [styled-components](http://styled-components.com).
 
 ## Theme Support
-You can use the styled-component ThemeProvider to theme the components. A default pastel theme can be found [here](src/theme/pastel.js). This theme is also used, when no other theme is provided.
+You can use the styled-component ThemeProvider to theme the components. A default material theme can be found [here](src/theme/material.js). This theme is also used, when no other theme is provided.
 
 ## Licence
 
