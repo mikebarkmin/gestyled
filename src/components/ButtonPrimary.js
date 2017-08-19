@@ -8,8 +8,8 @@ import { getColorFromKey } from '../theme';
  */
 const ButtonPrimary = props => {
   const { theme } = props;
-  const bg = getColorFromKey(theme, 'primary');
-  const color = getColorFromKey(theme, 'primaryText');
+  const bg = theme.colors.primary;
+  const color = theme.colors.primaryText;
   return <Button bg={bg} color={color} {...props} />;
 };
 

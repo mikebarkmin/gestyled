@@ -12,11 +12,11 @@ const StyledButton = styled.button.attrs({
   cursor: pointer;
   padding: 6px 16px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: ${props => props.theme.fontWeights[2]};
   text-transform: uppercase;
   user-select: none;
   background-color: lightgrey;
-  color: black;
+  color: ${props => props.theme.colors.text};
   line-height: 1.4;
   white-space: nowrap;
   vertical-align: middle;
@@ -24,7 +24,6 @@ const StyledButton = styled.button.attrs({
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
   border: 1px solid transparent;
   text-align: center;
-
   width: ${props => (props.full ? '100%' : 'auto')};
 
   &:hover:enabled {
