@@ -41,8 +41,13 @@ const StyledTabButton = withStyle(styled.button.attrs({
 
 class Tabs extends React.Component {
   static propTypes = {
-    /** Array of Tabs */
-    children: PropTypes.arrayOf(PropTypes.instanceOf(LabeledContainer))
+    /** Array of LabeledContainers */
+    children: PropTypes.arrayOf(PropTypes.instanceOf(LabeledContainer)),
+    /** activate a specific tab, otherwise the first one will be opened */
+    active: PropTypes.number
+  };
+  static propTypes = {
+    active: 0
   };
   constructor(props) {
     super(props);

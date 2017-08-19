@@ -19,7 +19,7 @@ At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergr
 
 Accordion in Accordion
 ```javascript
-<Accordion>
+<Accordion active={0}>
     <LabeledContainer label="1.1">
         <Accordion>
             <LabeledContainer label="2.1">

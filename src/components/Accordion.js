@@ -28,13 +28,19 @@ const StyledAccordionBody = withStyle(styled.div`
 
 class Accordion extends React.Component {
   static propTypes = {
-    children: PropTypes.arrayOf(PropTypes.instanceOf(LabeledContainer))
+    /** Array of LabeledContainers */
+    children: PropTypes.arrayOf(PropTypes.instanceOf(LabeledContainer)),
+    /** Active accordion item, otherwise all will be closed */
+    active: PropTypes.number
+  };
+  static defaultProps = {
+    active: -1
   };
 
   constructor(props) {
     super(props);
     this.state = {
-      active: this.props.active || -1
+      active: this.props.active
     };
   }
   onChangeActive = i => {
