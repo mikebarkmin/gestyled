@@ -1,0 +1,1 @@
+Every component which is a children of the Tabs component must be wrapped with this Tab component.

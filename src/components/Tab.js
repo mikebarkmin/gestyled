@@ -6,8 +6,8 @@ const Tab = props =>
     {props.children}
   </div>;
 
-Tab.PropTypes = {
-  children: PropTypes.arrayOf(PropTypes.element),
+Tab.propTypes = {
+  /** Label which will be used for the tab */
   label: PropTypes.string
 };
 
