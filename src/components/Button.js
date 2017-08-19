@@ -30,6 +30,10 @@ const StyledButton = styled.button.attrs({
     background-color: ${props => darken(0.07, props.bg)};
   }
 
+  &:focus {
+    outline: none;
+  }
+
   &:disabled {
     cursor: default;
     background-color: ${props => transparentize(0.5, props.bg)};

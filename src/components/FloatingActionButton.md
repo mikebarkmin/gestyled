@@ -1,0 +1,5 @@
+```javascript
+<FloatingActionButton>
+🎮
+</FloatingActionButton>
+```
