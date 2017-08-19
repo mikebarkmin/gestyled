@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { darken, transparentize } from 'polished';
 import withStyle from './Base';
 import PropTypes from 'prop-types';
-import Tab from './Tab';
+import LabeledContainer from './LabeledContainer';
 
 const StyledTabs = styled.div`
   display: flex;
@@ -42,7 +42,7 @@ const StyledTabButton = withStyle(styled.button.attrs({
 class Tabs extends React.Component {
   static propTypes = {
     /** Array of Tabs */
-    children: PropTypes.arrayOf(PropTypes.instanceOf(Tab))
+    children: PropTypes.arrayOf(PropTypes.instanceOf(LabeledContainer))
   };
   constructor(props) {
     super(props);

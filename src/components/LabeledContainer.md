@@ -1,0 +1,1 @@
+Every component which is a children of the Tabs or Accordion component must be wrapped with this LabeledContainer component.
