@@ -35,11 +35,11 @@ const Navbar = props =>
 
 Navbar.propTypes = {
   /** Element to display in the middle */
-  title: PropTypes.element,
+  title: PropTypes.oneOfType([PropTypes.element, PropTypes.string]),
   /** Element to display on the right */
-  right: PropTypes.element,
+  right: PropTypes.oneOfType([PropTypes.element, PropTypes.string]),
   /** Element to display on the left */
-  left: PropTypes.element
+  left: PropTypes.oneOfType([PropTypes.element, PropTypes.string])
 };
 
 export default Navbar;
