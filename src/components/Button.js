@@ -27,7 +27,7 @@ const StyledButton = styled.button.attrs({
   width: ${props => (props.full ? '100%' : 'auto')};
 
   &:hover:enabled {
-    background-color: ${props => darken(0.05, props.bg)};
+    background-color: ${props => darken(0.07, props.bg)};
   }
 
   &:disabled {
