@@ -32,6 +32,10 @@ module.exports = {
       name: 'UI Components',
       content: 'docs/ui.md',
       components: 'src/components/*.js'
+    },
+    {
+      name: 'Animations',
+      content: 'docs/animations.md'
     }
   ]
 };
