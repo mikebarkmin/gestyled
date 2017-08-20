@@ -30,6 +30,7 @@
     "webpack-blocks": "^1.0.0-beta.3"
   },
   "dependencies": {
+    "grid-styled": "^2.0.0-10",
     "lodash.merge": "^4.6.0",
     "polished": "^1.4.0",
     "prop-types": "^15.5.10",
@@ -47,6 +48,9 @@
     "styleguide:build": "styleguidist build"
   },
   "lint-staged": {
-    "*.js": ["prettier --single-quote --write", "git add"]
+    "*.js": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
   }
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Relative from './Relative';
 import Absolute from './Absolute';
-import Container from './Container';
+import Box from './Box';
 import Title from './Title';
 import Caption from './Caption';
 import withStyle from './Base';
@@ -15,20 +15,20 @@ const CardMedia = props => {
         <Relative style={{ height: '100%' }}>
           <Absolute bottom right left>
             {props.title || props.subtitle
-              ? <Container pt={2} mb={1} bg="rgba(0,0,0,0.54)">
-                  <Container p={3}>
-                    <Container>
+              ? <Box pt={2} mb={1} bg="rgba(0,0,0,0.54)">
+                  <Box p={3}>
+                    <Box>
                       <Title color="rgba(255,255,255,0.84)">
                         {props.title}
                       </Title>
-                    </Container>
-                    <Container>
+                    </Box>
+                    <Box>
                       <Caption color="rgba(255,255,255,0.54)">
                         {props.subtitle}
                       </Caption>
-                    </Container>
-                  </Container>
-                </Container>
+                    </Box>
+                  </Box>
+                </Box>
               : ''}
           </Absolute>
         </Relative>

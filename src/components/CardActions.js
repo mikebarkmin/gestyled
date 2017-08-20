@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import withStyle from './Base';
-import Container from './Container';
+import Box from './Box';
 
-const StyledCardActions = styled(Container).attrs({
+const StyledCardActions = styled(Box).attrs({
   p: 1
 })`
   > * {

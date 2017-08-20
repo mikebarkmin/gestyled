@@ -2,24 +2,24 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import withStyle from './Base';
-import Container from './Container';
+import Box from './Box';
 import Title from './Title';
 import Caption from './Caption';
 
 const CardTitle = props => {
   return (
-    <Container p={3}>
-      <Container>
+    <Box p={3}>
+      <Box>
         <Title>
           {props.title}
         </Title>
-      </Container>
-      <Container>
+      </Box>
+      <Box>
         <Caption>
           {props.subtitle}
         </Caption>
-      </Container>
-    </Container>
+      </Box>
+    </Box>
   );
 };
 
