@@ -1,17 +1,17 @@
 ```javascript
-<Paper level={0} style={{ height: 100, width: 100}}></Paper>
+<Paper level={0} style={{ height: 100, width: 150}}></Paper>
 ```
 ```javascript
-<Paper level={1} style={{ height: 100, width: 100}}></Paper>
+<Paper level={1} style={{ height: 100, width: 150}}></Paper>
 ```
 ```javascript
-<Paper level={2} style={{ height: 100, width: 100}}></Paper>
+<Paper level={2} style={{ height: 100, width: 150}}></Paper>
 ```
 ```javascript
-<Paper level={4} style={{ height: 100, width: 100}}></Paper>
+<Paper level={4} style={{ height: 100, width: 150}}></Paper>
 ```
 ```javascript
-<Paper level={4} style={{ height: 100, width: 100}}></Paper>
+<Paper level={4} style={{ height: 100, width: 150}}></Paper>
 ```
 ### Squared
 ```javascript
@@ -26,9 +26,6 @@
 ```javascript
 <Paper squared level={4} style={{ height: 100, width: 100}}></Paper>
 ```
-```javascript
-<Paper squared level={4} style={{ height: 100, width: 100}}></Paper>
-```
 
 ### Circle Paper
 ```javascript
@@ -39,9 +36,6 @@
 ```
 ```javascript
 <Paper circle level={2} style={{ height: 100, width: 100}}></Paper>
-```
-```javascript
-<Paper circle level={4} style={{ height: 100, width: 100}}></Paper>
 ```
 ```javascript
 <Paper circle level={4} style={{ height: 100, width: 100}}></Paper>
