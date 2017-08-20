@@ -22,9 +22,20 @@ const StyledAccordionHead = withStyle(styled.div`
   border-bottom: 1px solid #ddd;
 `);
 
+const StyledAccordionBodyAnimated = withStyle(styled.div`
+  border-bottom: 1px solid #ddd;
+  transform-origin: top;
+  overflow: hidden;
+  padding: ${props => (props.active ? '12px' : '0')};
+  padding-left: 12px;
+  max-height: ${props => (props.active ? '2000px' : '0')};
+`);
+
 const StyledAccordionBody = withStyle(styled.div`
   padding: 12px;
   border-bottom: 1px solid #ddd;
+  transform-origin: top;
+  overflow: hidden;
 `);
 
 class Accordion extends React.Component {
@@ -47,11 +58,14 @@ class Accordion extends React.Component {
     /** Active accordion item, otherwise all will be closed */
     active: PropTypes.number,
     /** Shadow level of Paper component */
-    level: PropTypes.number
+    level: PropTypes.number,
+    /** If the accordion should be animated. Caution this uses the css max-height hack for animation */
+    animated: PropTypes.bool
   };
   static defaultProps = {
     active: -1,
-    level: -1
+    level: -1,
+    animated: false
   };
 
   constructor(props) {
@@ -76,11 +90,15 @@ class Accordion extends React.Component {
         <StyledAccordionHead onClick={() => this.onChangeActive(i)}>
           {child.props.label}
         </StyledAccordionHead>
-        {this.state.active === i
-          ? <StyledAccordionBody>
-              {child.props.children}{' '}
-            </StyledAccordionBody>
-          : ''}
+        {this.props.animated
+          ? <StyledAccordionBodyAnimated active={i === this.state.active}>
+              {child.props.children}
+            </StyledAccordionBodyAnimated>
+          : this.state.active === i
+            ? <StyledAccordionBody>
+                {child.props.children}
+              </StyledAccordionBody>
+            : ''}
       </div>
     );
     return (
