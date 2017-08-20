@@ -43,7 +43,6 @@ class Tabs extends React.Component {
     /** Array of LabeledContainers */
     children: PropTypes.arrayOf(
       (propValue, key, componentName, location, propFullName) => {
-        console.log(propValue[key].props);
         if (!propValue[key].props.hasOwnProperty('label')) {
           return new Error(
             'Invalid prop `' +
