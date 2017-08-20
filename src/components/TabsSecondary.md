@@ -1,5 +1,5 @@
 ```javascript
-<TabsPrimary level={2}>
+<TabsSecondary level={2}>
     <LabeledContainer label="Tab 1">
         <Container pt={3}>
             <Text>
@@ -14,5 +14,5 @@
             </Text>
         </Container>
     </LabeledContainer>
-</TabsPrimary>
+</TabsSecondary>
 ```
