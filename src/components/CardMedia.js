@@ -1,59 +1,39 @@
 import React from 'react';
-import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import Relative from './Relative';
 import Absolute from './Absolute';
+import Container from './Container';
+import Title from './Title';
+import Caption from './Caption';
 import withStyle from './Base';
-
-const StyledCardMedia = styled.div`position: relative;`;
-
-const StyledCardMediaOverlay = styled.div`
-  padding-top: 8px;
-  margin-bottom: 4px;
-  background: rgba(0, 0, 0, 0.54);
-`;
-
-const StyledCardMediaTitleContainer = styled.div`
-  padding: 16px;
-  position: relative;
-`;
-
-const StyledCardMediaTitle = styled.span`
-  font-size: 24px;
-  color: rgba(255, 255, 255, 0.87);
-  display: block;
-  line-height: 36px;
-`;
-
-const StyledCardMediaSubtitle = styled.span`
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.54);
-  display: block;
-`;
 
 const CardMedia = props => {
   return (
-    <StyledCardMedia {...props}>
+    <Relative>
       {props.children}
       <Absolute left right top bottom>
         <Relative style={{ height: '100%' }}>
           <Absolute bottom right left>
             {props.title || props.subtitle
-              ? <StyledCardMediaOverlay>
-                  <StyledCardMediaTitleContainer>
-                    <StyledCardMediaTitle>
-                      {props.title}
-                    </StyledCardMediaTitle>
-                    <StyledCardMediaSubtitle>
-                      {props.subtitle}
-                    </StyledCardMediaSubtitle>
-                  </StyledCardMediaTitleContainer>
-                </StyledCardMediaOverlay>
+              ? <Container pt={2} mb={1} bg="rgba(0,0,0,0.54)">
+                  <Container p={3}>
+                    <Container>
+                      <Title color="rgba(255,255,255,0.84)">
+                        {props.title}
+                      </Title>
+                    </Container>
+                    <Container>
+                      <Caption color="rgba(255,255,255,0.54)">
+                        {props.subtitle}
+                      </Caption>
+                    </Container>
+                  </Container>
+                </Container>
               : ''}
           </Absolute>
         </Relative>
       </Absolute>
-    </StyledCardMedia>
+    </Relative>
   );
 };
 

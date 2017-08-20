@@ -1,12 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
-import withStyle from './Base';
+import Text from './Text';
+import Container from './Container';
 
-const StyledCardText = styled.div`
-  padding: 16px;
-  font-size: 14px;
-`;
+const CardText = props =>
+  <Container p={3}>
+    <Text {...props} />
+  </Container>;
 
-const CardText = props => <StyledCardText {...props} />;
-
-export default withStyle(CardText);
+export default CardText;

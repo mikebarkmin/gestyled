@@ -2,37 +2,24 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import withStyle from './Base';
-
-const StyledCardTitleContainer = styled.div`
-  padding: 16px;
-  position: relative;
-`;
-
-const StyledCardTitle = styled.span`
-  font-size: 24px;
-  color: rgba(0, 0, 0, 0.87);
-  display: block;
-  line-height: 36px;
-`;
-
-const StyledCardSubtitle = styled.span`
-  font-size: 14px;
-  color: rgba(0, 0, 0, 0.54);
-  display: block;
-`;
+import Container from './Container';
+import Title from './Title';
+import Caption from './Caption';
 
 const CardTitle = props => {
   return (
-    <StyledCardTitleContainer>
-      <StyledCardTitle>
-        <StyledCardTitle>
+    <Container p={3}>
+      <Container>
+        <Title>
           {props.title}
-        </StyledCardTitle>
-        <StyledCardSubtitle>
+        </Title>
+      </Container>
+      <Container>
+        <Caption>
           {props.subtitle}
-        </StyledCardSubtitle>
-      </StyledCardTitle>
-    </StyledCardTitleContainer>
+        </Caption>
+      </Container>
+    </Container>
   );
 };
 
