@@ -41,7 +41,21 @@ const StyledTabButton = withStyle(styled.button.attrs({
 class Tabs extends React.Component {
   static propTypes = {
     /** Array of LabeledContainers */
-    children: PropTypes.arrayOf(PropTypes.instanceOf(LabeledContainer)),
+    children: PropTypes.arrayOf(
+      (propValue, key, componentName, location, propFullName) => {
+        console.log(propValue[key].props);
+        if (!propValue[key].props.hasOwnProperty('label')) {
+          return new Error(
+            'Invalid prop `' +
+              propFullName +
+              '` supplied to' +
+              ' `' +
+              componentName +
+              '`. Validation failed. Child components need a label prop.'
+          );
+        }
+      }
+    ),
     /** activate a specific tab, otherwise the first one will be opened */
     active: PropTypes.number,
     /** Background color */

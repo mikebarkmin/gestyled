@@ -30,7 +30,21 @@ const StyledAccordionBody = withStyle(styled.div`
 class Accordion extends React.Component {
   static propTypes = {
     /** Array of LabeledContainers */
-    children: PropTypes.arrayOf(PropTypes.instanceOf(LabeledContainer)),
+    children: PropTypes.arrayOf(
+      (propValue, key, componentName, location, propFullName) => {
+        console.log(propValue[key].props);
+        if (!propValue[key].props.hasOwnProperty('label')) {
+          return new Error(
+            'Invalid prop `' +
+              propFullName +
+              '` supplied to' +
+              ' `' +
+              componentName +
+              '`. Validation failed. Child components need a label prop.'
+          );
+        }
+      }
+    ),
     /** Active accordion item, otherwise all will be closed */
     active: PropTypes.number,
     /** Shadow level of Paper component */
