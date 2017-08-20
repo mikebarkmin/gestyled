@@ -35,3 +35,22 @@ Accordion in Accordion
     </LabeledContainer>
 </Accordion>
 ```
+
+Accordion with Shadow
+```javascript
+<Accordion active={0} level={3}>
+    <LabeledContainer label="1.1">
+        <Accordion>
+            <LabeledContainer label="2.1">
+                Level 2.1
+            </LabeledContainer>
+            <LabeledContainer label="2.2">
+                Level 2.2
+            </LabeledContainer>
+        </Accordion>
+    </LabeledContainer>
+    <LabeledContainer label="1.2">
+        Not nested
+    </LabeledContainer>
+</Accordion>
+```

@@ -3,8 +3,9 @@ import styled from 'styled-components';
 import LabeledContainer from './LabeledContainer';
 import PropTypes from 'prop-types';
 import withStyle from './Base';
+import Paper from './Paper';
 
-const StyledAccordion = styled.div`
+const StyledAccordion = styled(Paper)`
   box-sizing: border-box;
   width: 100%;
   border: 1px solid #ddd;
@@ -31,10 +32,13 @@ class Accordion extends React.Component {
     /** Array of LabeledContainers */
     children: PropTypes.arrayOf(PropTypes.instanceOf(LabeledContainer)),
     /** Active accordion item, otherwise all will be closed */
-    active: PropTypes.number
+    active: PropTypes.number,
+    /** Shadow level of Paper component */
+    level: PropTypes.number
   };
   static defaultProps = {
-    active: -1
+    active: -1,
+    level: -1
   };
 
   constructor(props) {
@@ -53,7 +57,7 @@ class Accordion extends React.Component {
     });
   };
   render() {
-    const { children } = this.props;
+    const { children, level } = this.props;
     const entries = children.map((child, i) =>
       <div key={i}>
         <StyledAccordionHead onClick={() => this.onChangeActive(i)}>
@@ -67,7 +71,7 @@ class Accordion extends React.Component {
       </div>
     );
     return (
-      <StyledAccordion>
+      <StyledAccordion level={level}>
         {entries}
       </StyledAccordion>
     );
