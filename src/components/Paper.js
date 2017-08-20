@@ -12,7 +12,10 @@ const StyledPaper = styled.div`
 
 const Paper = props => {
   const { level, theme } = props;
-  let shadow = theme.shadowLevels[level];
+  let shadow = 'none';
+  if (level > -1) {
+    shadow = theme.shadowLevels[level];
+  }
   let borderRadius = '2px';
   if (props.circle) {
     borderRadius = '50%';
