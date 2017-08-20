@@ -46,7 +46,7 @@ class Tabs extends React.Component {
     /** activate a specific tab, otherwise the first one will be opened */
     active: PropTypes.number
   };
-  static propTypes = {
+  static defaultProps = {
     active: 0
   };
   constructor(props) {
