@@ -2,14 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import withStyle from './Base';
-
-const StyledCardHeader = withStyle(styled.div`
-  padding: 16px;
-  font-weight: 500;
-  box-sizing: border-box;
-  position: relative;
-  white-space: nowrap;
-`);
+import Box from './Box';
+import Flex from './Flex';
+import InlineBox from './InlineBox';
+import Title from './Title';
+import Caption from './Caption';
 
 const StyledCardHeaderAvatar = styled.img`
   border-radius: 50%;
@@ -22,39 +19,24 @@ const StyledCardHeaderAvatar = styled.img`
   background-color: rgb(188, 188, 188);
 `;
 
-const StyledCardHeaderTitleContainer = styled.div`
-  display: inline-block;
-  vertical-align: top;
-  white-space: normal;
-  padding-right: 90;
-`;
-
-const StyledCardHeaderTitle = styled.span`
-  color: rgba(0, 0, 0, 0.87);
-  display: block;
-  font-size: 15px;
-`;
-
-const StyledCardHeaderSubtitle = styled.span`
-  color: rgba(0, 0, 0, 0.54);
-  display: block;
-  font-size: 14px;
-`;
-
 const CardHeader = props =>
-  <StyledCardHeader>
+  <Flex align="center" justify="center" p={3}>
     {props.avatar
       ? <StyledCardHeaderAvatar size="40" src={props.avatar} />
       : ''}
-    <StyledCardHeaderTitleContainer>
-      <StyledCardHeaderTitle>
-        {props.title}
-      </StyledCardHeaderTitle>
-      <StyledCardHeaderSubtitle>
-        {props.subtitle}
-      </StyledCardHeaderSubtitle>
-    </StyledCardHeaderTitleContainer>
-  </StyledCardHeader>;
+    <InlineBox flex="1 1 auto">
+      <Box>
+        <Title>
+          {props.title}
+        </Title>
+      </Box>
+      <Box>
+        <Caption>
+          {props.subtitle}
+        </Caption>
+      </Box>
+    </InlineBox>
+  </Flex>;
 
 CardHeader.propTypes = {
   /** Title */
