@@ -15,7 +15,7 @@ const CardMedia = props => {
         <Relative style={{ height: '100%' }}>
           <Absolute bottom right left>
             {props.title || props.subtitle
-              ? <Box pt={2} mb={1} bg="rgba(0,0,0,0.54)">
+              ? <Box pt={2} bg="rgba(0,0,0,0.54)">
                   <Box p={3}>
                     <Box>
                       <Title color="rgba(255,255,255,0.84)">
