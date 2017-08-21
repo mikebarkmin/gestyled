@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Box from './Box';
+import withStyle from './Base';
 
 const StyledContainer = styled(Box)`
     max-width: 1024px;
@@ -10,4 +11,4 @@ const StyledContainer = styled(Box)`
 
 const Container = props => <StyledContainer {...props} />;
 
-export default Container;
+export default withStyle(Container);
