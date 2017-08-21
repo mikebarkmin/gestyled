@@ -1,7 +1,6 @@
 import Absolute from './components/Absolute';
 import Accordion from './components/Accordion';
-import Base from './Base';
-import Box from './Box';
+import Box from './components/Box';
 import Button from './components/Button';
 import ButtonDefault from './components/ButtonDefault';
 import ButtonError from './components/ButtonError';
@@ -44,11 +43,11 @@ import ThemeProvider from './components/ThemeProvider';
 import Title from './components/Title';
 import animations from './animations';
 import theme from './theme';
+import withStyle from './components/Base';
 
 export {
   Absolute,
   Accordion,
-  Base,
   Box,
   Button,
   ButtonDefault,
@@ -89,5 +88,6 @@ export {
   ThemeProvider,
   Title,
   animations,
-  theme
+  theme,
+  withStyle
 };
