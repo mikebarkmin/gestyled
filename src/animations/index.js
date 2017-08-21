@@ -5,4 +5,4 @@ import pulse from './pulse';
 import pulseGrow from './pulseGrow';
 import pulseShrink from './pulseShrink';
 
-export default { rotate360, grow, shrink, pulse, pulseGrow, pulseShrink };
+export { rotate360, grow, shrink, pulse, pulseGrow, pulseShrink };

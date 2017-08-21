@@ -41,9 +41,10 @@ import TabsSecondary from './components/TabsSecondary';
 import Text from './components/Text';
 import ThemeProvider from './components/ThemeProvider';
 import Title from './components/Title';
-import animations from './animations';
-import theme from './theme';
 import withStyle from './components/Base';
+
+import * as animations from './animations';
+import * as theme from './theme';
 
 export {
   Absolute,
