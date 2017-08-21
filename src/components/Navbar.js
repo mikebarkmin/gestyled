@@ -7,8 +7,8 @@ import Title from './Title';
 const StyledNavbar = styled(Paper)`
     width: 100%;
     padding: 12px 24px;
-    background-color: ${props => props.theme.colors.primary};
-    color: ${props => props.theme.colors.primaryText};
+    background-color: ${props => props.bg || props.theme.colors.primary};
+    color: ${props => props.color || props.theme.colors.primaryText};
     font-size: ${props => props.theme.fontSizes[3]}px;
     display: flex;
     align-items: center;
