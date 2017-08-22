@@ -20,6 +20,7 @@ import Code from './components/Code';
 import Container from './components/Container';
 import Divider from './components/Divider';
 import Embed from './components/Embed';
+import Fixed from './components/Fixed';
 import Flex from './components/Flex';
 import FloatingActionButton from './components/FloatingActionButton';
 import FloatingActionButtonPrimary from './components/FloatingActionButtonPrimary';
@@ -30,6 +31,7 @@ import Image from './components/Image';
 import ImageCropped from './components/ImageCropped';
 import InlineBox from './components/InlineBox';
 import Input from './components/Input';
+import Label from './components/Label';
 import LabeledContainer from './components/LabeledContainer';
 import Navbar from './components/Navbar';
 import Paper from './components/Paper';
@@ -49,6 +51,10 @@ import * as animations from './animations';
 import * as theme from './theme';
 
 export {
+  Textarea,
+  Input,
+  Label,
+  Fixed,
   Absolute,
   Accordion,
   Box,
