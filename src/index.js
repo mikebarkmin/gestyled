@@ -51,10 +51,6 @@ import * as animations from './animations';
 import * as theme from './theme';
 
 export {
-  Textarea,
-  Input,
-  Label,
-  Fixed,
   Absolute,
   Accordion,
   Box,
@@ -77,6 +73,7 @@ export {
   Container,
   Divider,
   Embed,
+  Fixed,
   Flex,
   FloatingActionButton,
   FloatingActionButtonPrimary,
@@ -85,6 +82,9 @@ export {
   Image,
   ImageCropped,
   InlineBox,
+  Input,
+  Label,
+  LabeledContainer,
   Navbar,
   Paper,
   Pre,
@@ -94,6 +94,7 @@ export {
   TabsPrimary,
   TabsSecondary,
   Text,
+  Textarea,
   ThemeProvider,
   Title,
   animations,
