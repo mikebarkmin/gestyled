@@ -6,12 +6,12 @@ import PropTypes from 'prop-types';
 import LabeledContainer from './LabeledContainer';
 import Paper from './Paper';
 
-const StyledTabs = styled(Paper)`
+const StyledTabs = withStyle(styled(Paper)`
   display: flex;
   white-space: nowrap;
   background-color: ${props => props.bg};
   width: 100%;
-`;
+`);
 
 const StyledTabButton = withStyle(styled.button.attrs({
   type: 'button'
@@ -85,7 +85,7 @@ class Tabs extends React.Component {
     });
   };
   render() {
-    const { children, bg, color, activeColor, level } = this.props;
+    const { children, color, activeColor, bg, ...props } = this.props;
     const tabWidth = 1 / children.length;
     const tabButtons = children.map((child, i) =>
       <StyledTabButton
@@ -102,7 +102,7 @@ class Tabs extends React.Component {
     );
     return (
       <div>
-        <StyledTabs bg={bg} level={level}>
+        <StyledTabs {...props} bg={bg}>
           {tabButtons}
         </StyledTabs>
         {children[this.state.active]}
