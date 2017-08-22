@@ -5,6 +5,7 @@ import withStyle from './Base';
 const StyledInput = styled.input`
   border: none;
   border-bottom: 2px solid lightgrey;
+  display: flex;
 
   &:focus {
     outline: none;

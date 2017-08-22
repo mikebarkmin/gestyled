@@ -1,6 +1,7 @@
 ```javascript
 <div>
-<Input name="mail" id="mail"/>
-<Label for="mail">Mail</Label>
+<Label>Mail
+<Input />
+</Label>
 </div>
 ```
