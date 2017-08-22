@@ -1,6 +1,6 @@
 {
   "name": "gestyled",
-  "version": "0.7.2",
+  "version": "0.7.3",
   "description": "React component library, build with styled-components",
   "main": "build/index.js",
   "repository": "https://github.com/mikebarkmin/gestyled",
