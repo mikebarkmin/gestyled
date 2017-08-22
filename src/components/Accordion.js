@@ -60,12 +60,15 @@ class Accordion extends React.Component {
     /** Shadow level of Paper component */
     level: PropTypes.number,
     /** If the accordion should be animated. Caution this uses the css max-height hack for animation */
-    animated: PropTypes.bool
+    animated: PropTypes.bool,
+    /** Called when the selected value changes */
+    onChange: PropTypes.func
   };
   static defaultProps = {
     active: -1,
     level: -1,
-    animated: false
+    animated: false,
+    onChange: () => {}
   };
 
   constructor(props) {
@@ -74,11 +77,12 @@ class Accordion extends React.Component {
       active: this.props.active
     };
   }
-  onChangeActive = i => {
+  onChangeActive = (e, i) => {
     let nextI = i;
     if (i === this.state.active) {
       nextI = -1;
     }
+    this.props.onChange(e, i);
     this.setState({
       active: nextI
     });
@@ -87,7 +91,7 @@ class Accordion extends React.Component {
     const { children, level } = this.props;
     const entries = children.map((child, i) =>
       <div key={i}>
-        <StyledAccordionHead onClick={() => this.onChangeActive(i)}>
+        <StyledAccordionHead onClick={e => this.onChangeActive(e, i)}>
           {child.props.label}
         </StyledAccordionHead>
         {this.props.animated

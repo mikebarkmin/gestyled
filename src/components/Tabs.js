@@ -64,14 +64,17 @@ class Tabs extends React.Component {
     /** Indicator color of active element */
     activeColor: PropTypes.string,
     /** shadow level from Paper component */
-    level: PropTypes.number
+    level: PropTypes.number,
+    /** Called when the selected value changes */
+    onChange: PropTypes.func
   };
   static defaultProps = {
     active: 0,
     bg: 'lightgrey',
     color: 'black',
     activeColor: 'dimgrey',
-    level: -1
+    level: -1,
+    onChange: () => {}
   };
   constructor(props) {
     super(props);
@@ -79,10 +82,11 @@ class Tabs extends React.Component {
       active: 0
     };
   }
-  onChangeActive = i => {
+  onChangeActive = (e, i) => {
     this.setState({
       active: i
     });
+    this.props.onChange(e, i);
   };
   render() {
     const { children, color, activeColor, bg, ...props } = this.props;
@@ -95,7 +99,7 @@ class Tabs extends React.Component {
         activeColor={activeColor}
         active={i === this.state.active}
         width={tabWidth}
-        onClick={() => this.onChangeActive(i)}
+        onClick={e => this.onChangeActive(e, i)}
       >
         {child.props.label}
       </StyledTabButton>
