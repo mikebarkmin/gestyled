@@ -21,7 +21,7 @@ const StyledButton = styled.button.attrs({
   white-space: nowrap;
   vertical-align: middle;
   border-radius: 2px;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+  box-shadow: ${props => props.theme.shadowLevels[props.level]};
   border: 1px solid transparent;
   text-align: center;
   width: ${props => (props.full ? '100%' : 'auto')};
@@ -54,14 +54,17 @@ Button.propTypes = {
   /** Set the font-color */
   color: PropTypes.string,
   /** Set disabled */
-  disabled: PropTypes.bool
+  disabled: PropTypes.bool,
+  /** Shadow level */
+  level: PropTypes.number
 };
 
 Button.defaultProps = {
   full: false,
   bg: 'lightgrey',
   color: 'black',
-  disabled: false
+  disabled: false,
+  level: 0
 };
 
 export default withStyle(Button);

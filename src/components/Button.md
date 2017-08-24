@@ -17,3 +17,17 @@ Button component with full:
 ```js
 <Button full>My Button</Button>
 ```
+
+Button component with level:
+```js
+<Button level={4}>
+My Button
+</Button>
+```
+
+Flat Button:
+```js
+<Button level={-1}>
+My Button
+</Button>
+```
