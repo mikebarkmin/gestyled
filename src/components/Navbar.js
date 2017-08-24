@@ -11,6 +11,7 @@ const StyledNavbar = styled(Paper)`
     color: ${props => props.color || props.theme.colors.primaryText};
     font-size: ${props => props.theme.fontSizes[3]}px;
     display: flex;
+    min-height: 54px;
     align-items: center;
     justify-content; center;
     z-index: 1000;
