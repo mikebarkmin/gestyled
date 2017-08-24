@@ -1,8 +1,8 @@
 {
   "name": "gestyled",
-  "version": "0.7.5",
+  "version": "0.7.6",
   "description": "React component library, build with styled-components",
-  "main": "build/index.js",
+  "main": "index.js",
   "repository": "https://github.com/mikebarkmin/gestyled",
   "author": {
     "name": "Mike Barkmin",
@@ -40,10 +40,10 @@
   },
   "scripts": {
     "precommit": "lint-staged",
-    "build": "babel src -d build",
+    "build": "babel src -d build && cp -rf package.json build",
     "test": "jest --env=jsdom --watch",
     "coverage": "jest --env=jsdom --coverage",
-    "prepublish": "npm run build",
+    "prepublish": "npm run build && cd build",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build"
   },
