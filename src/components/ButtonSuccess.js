@@ -1,7 +1,6 @@
 import React from 'react';
 import Button from './Button';
 import { withTheme } from 'styled-components';
-import { getColorFromKey } from '../theme';
 
 /**
  * See Button for possible props.

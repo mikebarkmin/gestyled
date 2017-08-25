@@ -1,6 +1,6 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import { material } from '../theme';
+import { material } from '../themes';
 import merge from 'lodash.merge';
 
 export default props => {
