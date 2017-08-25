@@ -1,6 +1,6 @@
 {
   "name": "gestyled",
-  "version": "0.8.2",
+  "version": "0.8.3",
   "description": "React component library, build with styled-components",
   "main": "lib/index.js",
   "repository": "https://github.com/mikebarkmin/gestyled",
@@ -47,6 +47,9 @@
     "styleguide:build": "styleguidist build"
   },
   "lint-staged": {
-    "*.js": ["prettier --single-quote --write", "git add"]
+    "*.js": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
   }
 }
