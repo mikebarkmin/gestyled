@@ -8,6 +8,7 @@ const StyledPaper = styled.div`
   border-radius: ${props => props.borderRadius};
   display: inline-block;
   box-sizing: border-box;
+  background-color: #fff;
 `;
 
 const Paper = props => {
