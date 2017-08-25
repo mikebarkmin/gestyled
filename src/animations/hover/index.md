@@ -1,4 +1,4 @@
-<div class="pathline-0-55">import { grow } from 'gestyled/animations/hover';</div>
+<div class="pathline-0-55">import { grow } from 'gestyled/lib/animations/hover';</div>
 <div class="pathline-0-55">
 const AnimatedButton = styled.button([], grow);</div><br />
 
