@@ -41,7 +41,6 @@
   "scripts": {
     "precommit": "lint-staged",
     "build": "babel src -d build && cp -rf package.json build && cp -rf README.md build && cp -rf LICENSE.md build",
-    "test": "jest --env=jsdom --watch",
     "coverage": "jest --env=jsdom --coverage",
     "dist": "npm run build && cd build && npm publish",
     "styleguide": "styleguidist server",
