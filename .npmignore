@@ -2,3 +2,5 @@ src
 .babelrc
 docs
 styleguide
+build
+styleguide.config.js
