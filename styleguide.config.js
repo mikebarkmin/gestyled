@@ -29,13 +29,23 @@ module.exports = {
       ]
     },
     {
-      name: 'UI Components',
-      content: 'docs/ui.md',
+      name: 'Components',
+      content: 'src/components/index.md',
       components: 'src/components/*.js'
     },
     {
       name: 'Animations',
-      content: 'docs/animations.md'
+      content: 'src/animations/index.md',
+      sections: [
+        {
+          name: 'Hover',
+          content: 'src/animations/hover/index.md'
+        }
+      ]
+    },
+    {
+      name: 'Themes',
+      content: 'src/themes/index.md'
     }
   ]
 };
