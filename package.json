@@ -41,15 +41,12 @@
   "scripts": {
     "precommit": "lint-staged",
     "build": "babel src -d lib",
-    "prepublish": "npm build",
+    "prepublish": "npm run build",
     "coverage": "jest --env=jsdom --coverage",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build"
   },
   "lint-staged": {
-    "*.js": [
-      "prettier --single-quote --write",
-      "git add"
-    ]
+    "*.js": ["prettier --single-quote --write", "git add"]
   }
 }
