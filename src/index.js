@@ -48,7 +48,7 @@ import Title from './components/Title';
 import withStyle from './components/Base';
 
 import * as animations from './animations';
-import * as theme from './theme';
+import * as themes from './themes';
 
 export {
   Absolute,
@@ -98,6 +98,6 @@ export {
   ThemeProvider,
   Title,
   animations,
-  theme,
+  themes,
   withStyle
 };
