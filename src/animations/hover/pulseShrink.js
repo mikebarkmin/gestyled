@@ -7,7 +7,7 @@ const pulseShrinkKeyframes = keyframes`
 `;
 
 const pulseShrink = `
-    &:hover, &:focus, &:active {
+    &:hover {
         animation: ${pulseShrinkKeyframes} 0.3s linear infinite alternate;
     }
 `;

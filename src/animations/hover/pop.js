@@ -10,7 +10,7 @@ const popKeyframes = keyframes`
 `;
 
 const pop = `
-    &:hover, &:focus, &:active {
+    &:hover {
         animation: ${popKeyframes} 0.3s linear 1;
     }
 `;

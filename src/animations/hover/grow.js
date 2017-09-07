@@ -2,7 +2,7 @@ const grow = `
     transition-duration: 0.3s;
     transition-property: transform;
 
-    &:hover, &:focus, &:active {
+    &:hover {
         transform: scale(1.1);
     }
 `;

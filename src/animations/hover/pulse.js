@@ -10,7 +10,7 @@ const pulseKeyframes = keyframes`
 `;
 
 const pulse = `
-    &:hover, &:focus, &:active {
+    &:hover {
         animation: ${pulseKeyframes} 1s linear infinite;
     }
 `;

@@ -7,7 +7,7 @@ const pulseGrowKeyframes = keyframes`
 `;
 
 const pulseGrow = `
-    &:hover, &:focus, &:active {
+    &:hover {
         animation: ${pulseGrowKeyframes} 0.3s linear infinite alternate;
     }
 `;

@@ -10,7 +10,7 @@ const pushKeyframes = keyframes`
 `;
 
 const push = `
-    &:hover, &:focus, &:active {
+    &:hover {
         animation: ${pushKeyframes} 0.3s linear 1;
     }
 `;

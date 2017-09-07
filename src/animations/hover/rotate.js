@@ -1,5 +1,5 @@
 const rotate = `
-    &:hover, &:focus, &:active {
+    &:hover {
         transform: rotate(4deg);
         transition-duration: 0.3s;
     }
