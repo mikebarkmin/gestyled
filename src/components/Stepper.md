@@ -1,0 +1,1 @@
+This is the base component for a stepper. It should be used in conjunction with one of the other stepper components or you could implement your own.
