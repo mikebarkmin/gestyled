@@ -58,7 +58,7 @@ class Stepper extends React.Component {
         active: active < this.props.steps ? active : this.props.steps - 1
       },
       () => {
-        this.props.onBack(this.state.active);
+        this.props.onNext(this.state.active);
         this.props.onChange(this.state.active);
       }
     );
