@@ -40,6 +40,10 @@ module.exports = {
         {
           name: 'Hover',
           content: 'src/animations/hover/index.md'
+        },
+        {
+          name: 'Active',
+          content: 'src/animations/active/index.md'
         }
       ]
     },
