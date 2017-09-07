@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import Paper from './Paper';
 import Title from './Title';
+import Container from './Container';
 
 const StyledNavbar = styled(Paper)`
     width: 100%;
@@ -10,11 +11,14 @@ const StyledNavbar = styled(Paper)`
     background-color: ${props => props.bg || props.theme.colors.primary};
     color: ${props => props.color || props.theme.colors.primaryText};
     font-size: ${props => props.theme.fontSizes[3]}px;
-    display: flex;
     min-height: 54px;
+    z-index: 1000;
+`;
+
+const StyledNavbarContainer = styled(Container)`
+    display: flex;
     align-items: center;
     justify-content; center;
-    z-index: 1000;
 `;
 
 const StyledNavbarTitle = styled.div`
@@ -27,11 +31,13 @@ const StyledNavbarTitle = styled.div`
  */
 const Navbar = props =>
   <StyledNavbar {...props}>
-    {props.left}
-    <StyledNavbarTitle left={props.left}>
-      {props.title}
-    </StyledNavbarTitle>
-    {props.right}
+    <StyledNavbarContainer>
+      {props.left}
+      <StyledNavbarTitle left={props.left}>
+        {props.title}
+      </StyledNavbarTitle>
+      {props.right}
+    </StyledNavbarContainer>
   </StyledNavbar>;
 
 Navbar.propTypes = {
