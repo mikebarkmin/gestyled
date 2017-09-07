@@ -24,10 +24,3 @@ Button component with level:
 My Button
 </Button>
 ```
-
-Flat Button:
-```js
-<Button level={-1}>
-My Button
-</Button>
-```

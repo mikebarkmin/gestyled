@@ -5,7 +5,7 @@ import { space, width, fontSize, color } from 'styled-system';
 import { darken, transparentize } from 'polished';
 import withStyle from './Base';
 
-const StyledButton = withStyle(styled.button.attrs({
+const StyledButtonFlat = withStyle(styled.button.attrs({
   type: 'button'
 })`
   display: inline-block;
@@ -15,7 +15,7 @@ const StyledButton = withStyle(styled.button.attrs({
   font-weight: ${props => props.theme.fontWeights[2]};
   text-transform: uppercase;
   user-select: none;
-  background-color: lightgrey;
+  background: none;
   color: ${props => props.theme.colors.text};
   line-height: 1.4;
   white-space: nowrap;
@@ -27,30 +27,31 @@ const StyledButton = withStyle(styled.button.attrs({
   width: ${props => (props.full ? '100%' : 'auto')};
 
   &:hover:enabled {
-    background-color: ${props => darken(0.07, props.bg)};
+    color: ${props => darken(0.07, props.color)};
   }
 
   &:focus {
     outline: none;
   }
 
+  &:active:enabled {
+    background: ${props => transparentize(0.8, props.color)};
+  }
+
   &:disabled {
     cursor: default;
-    background-color: ${props => transparentize(0.5, props.bg)};
     color: ${props => transparentize(0.5, props.color)};
   }
 `);
 
 /**
- * A basic button.
+ * A flat button.
  */
-const Button = props => <StyledButton {...props} />;
+const ButtonFlat = props => <StyledButtonFlat {...props} />;
 
-Button.propTypes = {
+ButtonFlat.propTypes = {
   /** Span the full width of a parent */
   full: PropTypes.bool,
-  /** Set the background-color */
-  bg: PropTypes.string,
   /** Set the font-color */
   color: PropTypes.string,
   /** Set disabled */
@@ -59,12 +60,11 @@ Button.propTypes = {
   level: PropTypes.number
 };
 
-Button.defaultProps = {
+ButtonFlat.defaultProps = {
   full: false,
-  bg: 'lightgrey',
   color: 'black',
   disabled: false,
-  level: 0
+  level: -1
 };
 
-export default withStyle(Button);
+export default withStyle(ButtonFlat);
