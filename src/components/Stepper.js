@@ -26,7 +26,7 @@ class Stepper extends React.Component {
     onBack: () => {},
     onNext: () => {},
     onChange: () => {},
-    stepper: <div />,
+    stepper: () => <div style={{ display: 'inline' }} />,
     backLabel: '< Back',
     nextLabel: 'Next >'
   };
