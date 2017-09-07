@@ -7,7 +7,7 @@
   "author": {
     "name": "Mike Barkmin",
     "email": "mbarkmin@gmail.com",
-    "url": "http://blog.barkmin.eu"
+    "url": "http://www.barkmin.eu"
   },
   "license": "MIT",
   "devDependencies": {
@@ -46,9 +46,6 @@
     "styleguide:build": "styleguidist build"
   },
   "lint-staged": {
-    "*.js": [
-      "prettier --single-quote --write",
-      "git add"
-    ]
+    "*.js": ["prettier --single-quote --write", "git add"]
   }
 }

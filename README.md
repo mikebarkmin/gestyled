@@ -25,7 +25,7 @@ const App = props => (
 
 ## Component Showcase
 
-**See all components with possible props at [projects.barkmin.eu/gestyled](http://projects.barkmin.eu/gestyled)!**
+**See all components with possible props at [www.barkmin.eu/gestyled](http://www.barkmin.eu/gestyled)!**
 
 ## Base Props
 All components are wrapped in a higher order component that handles design-system-based responsive style props using [styled-system](https://github.com/jxnblk/styled-system).
