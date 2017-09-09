@@ -15,7 +15,7 @@ class Stepper extends React.Component {
     onChange: PropTypes.func,
     backLabel: PropTypes.string,
     nextLabel: PropTypes.string,
-    stepper: PropTypes.element
+    stepper: PropTypes.func
   };
 
   static defaultProps = {
@@ -65,9 +65,14 @@ class Stepper extends React.Component {
   };
 
   onClick = step => {
-    this.setState({
-      active: step
-    });
+    this.setState(
+      {
+        active: step
+      },
+      () => {
+        this.props.onChange(this.state.active);
+      }
+    );
   };
 
   render() {
