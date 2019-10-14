@@ -1,6 +1,6 @@
 {
   "name": "gestyled",
-  "version": "0.10.2",
+  "version": "0.10.3",
   "description": "React component library, build with styled-components",
   "main": "lib/index.js",
   "repository": "https://github.com/mikebarkmin/gestyled",
@@ -29,7 +29,8 @@
     "react-styleguidist": "^9.1.16",
     "react-test-renderer": "^16.10.2",
     "webpack": "^4.41.1",
-    "webpack-blocks": "^2.0.1"
+    "webpack-blocks": "^2.0.1",
+    "webpack-cli": "^3.3.9"
   },
   "dependencies": {
     "grid-styled": "^5.0.2",
