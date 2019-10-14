@@ -1,4 +1,4 @@
-import { keyframes } from 'styled-components';
+import { css, keyframes } from 'styled-components';
 
 const pushKeyframes = keyframes`
     50% {
@@ -9,10 +9,10 @@ const pushKeyframes = keyframes`
     }
 `;
 
-const push = `
-    &:hover {
-        animation: ${pushKeyframes} 0.3s linear 1;
-    }
+const push = css`
+  &:hover {
+    animation: ${pushKeyframes} 0.3s linear 1;
+  }
 `;
 
 export default push;

@@ -1,5 +1,6 @@
 import React from 'react';
 import withStyle from './Base';
+import { Link } from 'react-router-dom';
 
 let reactRouterDom;
 try {

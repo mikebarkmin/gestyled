@@ -1,6 +1,6 @@
 
 Install gestyled from npm or yarn:
-```sh
+```bash
 npm install --save gestyled
 # or if you're using yarn
 yarn add gestyled

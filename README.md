@@ -4,7 +4,7 @@ A React UI component library based on [styled-components](http://styled-componen
 
 [![Build Status](https://travis-ci.org/mikebarkmin/gestyled.svg?branch=master)](https://travis-ci.org/mikebarkmin/gestyled) [![Dependency Status](https://david-dm.org/mikebarkmin/gestyled.svg)](https://david-dm.org/mikebarkmin/gestyled) [![npm version](https://badge.fury.io/js/gestyled.svg)](https://badge.fury.io/js/gestyled)
 
-```sh
+```bash
 npm install --save gestyled
 # or if you're using yarn
 yarn add gestyled

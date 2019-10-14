@@ -1,4 +1,4 @@
-import { keyframes } from 'styled-components';
+import { css, keyframes } from 'styled-components';
 
 const pulseGrowKeyframes = keyframes`
     to {
@@ -6,10 +6,10 @@ const pulseGrowKeyframes = keyframes`
     }
 `;
 
-const pulseGrow = `
-    &:hover {
-        animation: ${pulseGrowKeyframes} 0.3s linear infinite alternate;
-    }
+const pulseGrow = css`
+  &:hover {
+    animation: ${pulseGrowKeyframes} 0.3s linear infinite alternate;
+  }
 `;
 
 export default pulseGrow;
