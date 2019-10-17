@@ -16,6 +16,8 @@
 ```
 Fan
 ```javascript
+import Paper from '../components/Paper';
+
 <Paper p={10} width="100%" style={{ textAlign: 'center' }} bg="coral">
 <Breadcrumbs fontSize={3} color="white" breadcrumbs={[
 {

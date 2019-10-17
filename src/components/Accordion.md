@@ -1,4 +1,7 @@
 ```javascript
+import Button from '../components/Button';
+import LabeledContainer from '../components/LabeledContainer';
+
 <Accordion>
     <LabeledContainer label={<Button>You can use a react component</Button>}>Content 1</LabeledContainer>
     <LabeledContainer label="Acc 2">
@@ -19,6 +22,8 @@ At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergr
 
 Accordion in Accordion
 ```javascript
+import LabeledContainer from '../components/LabeledContainer';
+
 <Accordion active={0}>
     <LabeledContainer label="1.1">
         <Accordion>
@@ -38,6 +43,8 @@ Accordion in Accordion
 
 Accordion with Shadow
 ```javascript
+import LabeledContainer from '../components/LabeledContainer';
+
 <Accordion active={0} level={3}>
     <LabeledContainer label="1.1">
         <Accordion>
@@ -57,6 +64,8 @@ Accordion with Shadow
 
 Animated Accordion with Shadow
 ```javascript
+import LabeledContainer from '../components/LabeledContainer';
+
 <Accordion animated active={0} level={3}>
     <LabeledContainer label="1.1">
         <Accordion animated>

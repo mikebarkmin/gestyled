@@ -1,5 +1,8 @@
 Modal
 ```javascript
+import Button from '../components/Button';
+import Paper from '../components/Paper';
+
 const open = false;
 class ModalContainer extends React.Component {
     constructor(props) {
@@ -28,6 +31,9 @@ class ModalContainer extends React.Component {
 ```
 Modal with overflow
 ```javascript
+import Button from '../components/Button';
+import Paper from '../components/Paper';
+
 const open = false;
 class ModalContainer extends React.Component {
     constructor(props) {

@@ -7,6 +7,8 @@ With delete event
 ```
 Colored chip
 ```javascript
+import Box from '../components/Box';
+
 <Box>
     <Chip bg="coral" onDelete={() => console.log('delete')}>This is a chip</Chip>
     <Chip color="white" bg="blue" onDelete={() => console.log('delete')}>This is a chip</Chip>
