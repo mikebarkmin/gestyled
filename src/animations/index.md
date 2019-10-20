@@ -1,6 +1,8 @@
 ## Combine Animations
 
 ```javascript
+import ButtonPrimary from '../components/ButtonPrimary';
+
 const styled = require('styled-components').default;
 const pulse = require('./hover/pulse.js').default;
 const ripple = require('./active/ripple.js').default;

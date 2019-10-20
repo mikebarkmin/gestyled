@@ -1,4 +1,8 @@
 ```javascript
+import ButtonError from '../components/ButtonError';
+import ButtonInfo from '../components/ButtonInfo';
+import ButtonPrimary from '../components/ButtonPrimary';
+
 const dark = require('../themes/dark').default;
 <ThemeProvider theme={dark}>
 <div>

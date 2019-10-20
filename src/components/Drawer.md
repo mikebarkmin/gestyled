@@ -1,4 +1,6 @@
 ```javascript
+import Button from '../components/Button';
+
 const open = false;
 class DrawerContainer extends React.Component {
     constructor(props) {
@@ -23,6 +25,8 @@ class DrawerContainer extends React.Component {
 ```
 Right Drawer
 ```javascript
+import Button from '../components/Button';
+
 const open = false;
 class DrawerContainer extends React.Component {
     constructor(props) {

@@ -5,6 +5,8 @@ const AnimatedButton = styled.button([], grow);</div><br />
 
 
 ```javascript
+import ButtonPrimary from '../../components/ButtonPrimary';
+
 const styled = require('styled-components').default;
 const animations = require('./index.js');
 

@@ -1,4 +1,11 @@
 ```javascript
+import Button from '../components/Button';
+import CardActions from '../components/CardActions';
+import CardHeader from '../components/CardHeader';
+import CardMedia from '../components/CardMedia';
+import CardText from '../components/CardText';
+import CardTitle from '../components/CardTitle';
+
 <Card>
     <CardHeader 
         title="User"
@@ -21,6 +28,13 @@
 Card uses the Paper component, so you can set other shadow levels
 
 ```javascript
+import Button from '../components/Button';
+import CardActions from '../components/CardActions';
+import CardHeader from '../components/CardHeader';
+import CardMedia from '../components/CardMedia';
+import CardText from '../components/CardText';
+import CardTitle from '../components/CardTitle';
+
 <Card level={4}>
     <CardHeader
         title="User"

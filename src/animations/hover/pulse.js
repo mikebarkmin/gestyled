@@ -1,4 +1,4 @@
-import { keyframes } from 'styled-components';
+import { css, keyframes } from 'styled-components';
 
 const pulseKeyframes = keyframes`
     25% {
@@ -9,10 +9,10 @@ const pulseKeyframes = keyframes`
     }
 `;
 
-const pulse = `
-    &:hover {
-        animation: ${pulseKeyframes} 1s linear infinite;
-    }
+const pulse = css`
+  &:hover {
+    animation: ${pulseKeyframes} 1s linear infinite;
+  }
 `;
 
 export default pulse;

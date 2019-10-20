@@ -1,4 +1,4 @@
-import { keyframes } from 'styled-components';
+import { css, keyframes } from 'styled-components';
 
 const rippleKeyframes = keyframes`
     0% {
@@ -15,25 +15,25 @@ const rippleKeyframes = keyframes`
     }
 `;
 
-const ripple = `
-    position: relative;
-    overflow: hidden;
-    &:after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 50px;
-        height: 50px;
-        background: rgba(255, 255, 255, .5);
-        opacity: 0;
-        border-radius: 50%;
-        transform: scale(1, 1) translate(-50%);
-        transform-origin: 50% 50%;
-    }
-    &:focus:not(:active)::after {
-        animation: ${rippleKeyframes} 1s ease-out;
-    }
+const ripple = css`
+  position: relative;
+  overflow: hidden;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    border-radius: 50%;
+    transform: scale(1, 1) translate(-50%);
+    transform-origin: 50% 50%;
+  }
+  &:focus:not(:active)::after {
+    animation: ${rippleKeyframes} 1s ease-out;
+  }
 `;
 
 export default ripple;

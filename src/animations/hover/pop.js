@@ -1,4 +1,4 @@
-import { keyframes } from 'styled-components';
+import { css, keyframes } from 'styled-components';
 
 const popKeyframes = keyframes`
     50% {
@@ -9,10 +9,10 @@ const popKeyframes = keyframes`
     }
 `;
 
-const pop = `
-    &:hover {
-        animation: ${popKeyframes} 0.3s linear 1;
-    }
+const pop = css`
+  &:hover {
+    animation: ${popKeyframes} 0.3s linear 1;
+  }
 `;
 
 export default pop;
