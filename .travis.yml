@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-    - 8.1
+    - 10.16
 script:
     - npm run styleguide:build
 deploy:
