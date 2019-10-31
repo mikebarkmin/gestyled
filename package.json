@@ -30,7 +30,7 @@
     "react-test-renderer": "16.11.0",
     "webpack": "4.41.2",
     "webpack-blocks": "2.0.1",
-    "webpack-cli": "3.3.9"
+    "webpack-cli": "3.3.10"
   },
   "dependencies": {
     "grid-styled": "^5.0.2",
