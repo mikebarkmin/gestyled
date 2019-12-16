@@ -28,7 +28,7 @@
     "react-router-dom": "5.1.2",
     "react-styleguidist": "10.2.1",
     "react-test-renderer": "16.12.0",
-    "webpack": "4.41.2",
+    "webpack": "4.41.3",
     "webpack-blocks": "2.0.1",
     "webpack-cli": "3.3.10"
   },
