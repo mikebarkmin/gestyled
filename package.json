@@ -38,7 +38,7 @@
     "polished": "^3.4.1",
     "prop-types": "^15.7.2",
     "react": "^16.10.2",
-    "styled-components": "^4.4.0",
+    "styled-components": "^5.0.0",
     "styled-system": "^5.1.2"
   },
   "scripts": {
