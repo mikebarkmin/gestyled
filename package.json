@@ -35,7 +35,7 @@
   "dependencies": {
     "grid-styled": "^5.0.2",
     "lodash.merge": "^4.6.2",
-    "polished": "^3.4.1",
+    "polished": "^4.0.0",
     "prop-types": "^15.7.2",
     "react": "^16.10.2",
     "styled-components": "^4.4.0",
